@@ -23,6 +23,7 @@ function Notas ()
     const [mostraTitulo, setMostraTitulo] = useState('');
     const [mostraCategoria, setMostraCategoria] = useState('');
     const [mostraConteudo, setMostraConteudo] = useState('');
+    const [mostraData, setMostraData] = useState('');
 
     //CRUD
     async function createNotas (nota)
@@ -60,6 +61,7 @@ function Notas ()
         setMostraTitulo(json.titulo);
         setMostraCategoria(json.categoria);
         setMostraConteudo(json.conteudo);
+        setMostraData(json.data);
 
         await readNotas();
     }
@@ -179,6 +181,9 @@ function Notas ()
                                 <div className="col text-end">
                                     <button className="btn btn-danger" onClick={ (e) => deleteNotas(mostraId) }>Apagar nota</button>
                                 </div>
+                            </div>
+                            <div className="d-flex justify-content-center my-4">
+                                Data de alteração: { mostraData }
                             </div>
                             <div class="mb-3">
                                 <label htmlFor="titulo" className="form-label">Título</label>
