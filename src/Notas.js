@@ -142,7 +142,7 @@ function Notas ()
                         } }>+</button></div>
                     </div>
                     <ul className="list-group my-3">
-                        { notasFiltradas.map(nota => <li className="list-group-item" onClick={ (e) => { mostrarNota(nota.id) } }>{ nota.titulo }</li>) }
+                        { notasFiltradas.map(nota => <li key={ nota.id } className="list-group-item" onClick={ (e) => { mostrarNota(nota.id) } }>{ nota.titulo }</li>) }
                     </ul>
                     <div>
                         <button className="btn btn-primary w-100" onClick={ logout }>Sair</button>
@@ -155,15 +155,15 @@ function Notas ()
                             <div>
                                 <h2>Cadastro de notas</h2>
                             </div>
-                            <div class="mb-3">
+                            <div className="mb-3">
                                 <label htmlFor="titulo" className="form-label">Título</label>
                                 <input type="text" className="form-control" id="titulo" value={ novoTitulo } onChange={ (e) => setNovoTitulo(e.target.value) } />
                             </div>
-                            <div class="mb-3">
+                            <div className="mb-3">
                                 <label htmlFor="categoria" className="form-label">Categoria</label>
                                 <input type="text" className="form-control" id="categoria" value={ novaCategoria } onChange={ (e) => setNovaCategoria(e.target.value) } />
                             </div>
-                            <div class="mb-3">
+                            <div className="mb-3">
                                 <label htmlFor="conteudo" className="form-label">Conteudo</label>
                                 <textarea type="text" className="form-control" id="conteudo" value={ novoConteudo } onChange={ (e) => setNovoConteudo(e.target.value) } />
                             </div>
