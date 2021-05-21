@@ -185,15 +185,15 @@ function Notas ()
                             <div className="d-flex justify-content-center my-4">
                                 Data de alteração: { mostraData }
                             </div>
-                            <div class="mb-3">
+                            <div className="mb-3">
                                 <label htmlFor="titulo" className="form-label">Título</label>
                                 <input type="text" className="form-control" id="titulo" value={ mostraTitulo } onChange={ (e) => setMostraTitulo(e.target.value) } />
                             </div>
-                            <div class="mb-3">
+                            <div className="mb-3">
                                 <label htmlFor="categoria" className="form-label">Categoria</label>
                                 <input type="text" className="form-control" id="categoria" value={ mostraCategoria } onChange={ (e) => setMostraCategoria(e.target.value) } />
                             </div>
-                            <div class="mb-3">
+                            <div className="mb-3">
                                 <label htmlFor="conteudo" className="form-label">Conteudo</label>
                                 <textarea type="text" className="form-control" id="conteudo" value={ mostraConteudo } onChange={ (e) => setMostraConteudo(e.target.value) } />
                             </div>
