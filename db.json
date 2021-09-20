@@ -9,10 +9,10 @@
     },
     {
       "id": 2,
-      "titulo": "Teste2",
+      "titulo": "Teste2s",
       "categoria": "Teste",
       "conteudo": "Qualquer coisa",
-      "data": "hoje"
+      "data": "Thu May 20 2021 23:23:15 GMT-0300 (Horário Padrão de Brasília)"
     },
     {
       "id": 3,
@@ -48,13 +48,6 @@
       "conteudo": "test",
       "data": "teste",
       "id": 7
-    },
-    {
-      "titulo": "testesets",
-      "categoria": "testetse",
-      "conteudo": "testets",
-      "data": 1621557566291,
-      "id": 8
     }
   ]
 }
